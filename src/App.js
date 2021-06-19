@@ -1,10 +1,54 @@
 
-function App() {
-  return (
-    <div>
-      <h1>Swiss Big-data</h1>
-    </div>
-  );
-}
+import React, { Component } from 'react';
+import api from './api';
+import styles from './estilo.module.css';
+
+
+class App extends Component {
+
+  state= {
+    lista: [],
+  }
+
+  async componentDidMount(){
+    const response = await api.get('');
+
+    this.setState({lista: response.data});
+
+  }
+
+  render(){
+    const { lista } = this.state
+    
+
+
+
+    return(
+      <div>
+        <h1>Listagem</h1>
+        {console.log(lista)}
+
+        {lista.map((list, id) => (
+
+          <li className={styles.lista} key={id}>
+            <h2>ID: {id}</h2>
+            <h3>Atleta: <strong> {list.athlete} </strong></h3>
+            <p>Idade: {list.age}</p>
+            <p>Cidade: {list.country}</p>
+            <p>Sport: {list.sport}</p>
+            <div>
+              <h4>Medalhas</h4>
+              <p>Data: {list.date}</p>
+              <p>Ouro: {list.gold}</p>
+              <p>Prata: {list.silver}</p>
+              <p>Bronze: {list.bronze}</p>
+              <p>Total: <strong>{list.total}</strong></p>
+            </div>
+          </li>
+        ))}
+      </div>
+    );
+  };
+};
 
 export default App;
