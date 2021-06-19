@@ -1,6 +1,35 @@
 
+* {
+    box-sizing: border-box;
+}
 
-.lista li {
-    text-decoration: none;
-    display: grid;
+
+html, body {
+    font-family: sans-serif;
+    padding: 0;
+     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: rgb(34,195,59);
+    background: radial-gradient(circle, rgba(34,195,59,1) 0%, rgba(45,253,182,1) 100%);
+}
+
+.container {
+    display:grid;
+    width: 80%;
+    height: 90%;
+    background-color:#547CF21a;
+    backdrop-filter: blur(60px);
+    border: solid 1px rgba(24, 104, 24, 0.377);
+    border-radius: 15px;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.lista {
+    color: rgba(0, 0, 0, 0.644);
+    font-family: sans-serif;
+    list-style-type:none;
+    
 }

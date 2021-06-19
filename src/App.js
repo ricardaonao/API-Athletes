@@ -25,26 +25,28 @@ class App extends Component {
 
     return(
       <div>
-        <h1>Listagem</h1>
         {console.log(lista)}
 
         {lista.map((list, id) => (
-
-          <li className={styles.lista} key={id}>
-            <h2>ID: {id}</h2>
-            <h3>Atleta: <strong> {list.athlete} </strong></h3>
-            <p>Idade: {list.age}</p>
-            <p>Cidade: {list.country}</p>
-            <p>Sport: {list.sport}</p>
-            <div>
-              <h4>Medalhas</h4>
-              <p>Data: {list.date}</p>
-              <p>Ouro: {list.gold}</p>
-              <p>Prata: {list.silver}</p>
-              <p>Bronze: {list.bronze}</p>
-              <p>Total: <strong>{list.total}</strong></p>
-            </div>
-          </li>
+        <div className={styles.container}>    
+          <lu className={styles.lista}>
+            <li key={id}>
+              <h2>ID: {id}</h2>
+              <h3>Atleta: <strong>{list.athlete}</strong></h3>
+              <p>Idade: {list.age}</p>
+              <p>Cidade: {list.country}</p>
+              <p>Sport: {list.sport}</p>
+              <div>
+                <h4>Medalhas</h4>
+                <p>Data: {list.date}</p>
+                <p>Ouro: {list.gold}</p>
+                <p>Prata: {list.silver}</p>
+                <p>Bronze: {list.bronze}</p>
+                <p>Total: <strong>{list.total}</strong></p>
+              </div>
+            </li>
+          </lu>
+        </div>
         ))}
       </div>
     );
