@@ -11,7 +11,7 @@ Demonstar uma maneira simples de se consumir uma API utilizando **React + Axios*
 
 
 ## Configurando Ambiente 
- Instale o combo **Noode.Js + NPM** (caso não tenha, acesse o site do Node.js https://nodejs.org/en/, baixe a versão LTS, e instale. Next, next, next...), instale os seguintes pacotes utilizando seu terminal:
+ Instale o **Noode.Js** (caso não tenha, acesse o site do Node.js https://nodejs.org/en/, baixe a versão LTS, e instale. Next, next, next...), instale os seguintes pacotes utilizando seu terminal:
 
 * **React** : Biblioteca **JavaScript** para criação de UI (User Interface) baseada em componentes e sintaxe *jsx*.<br> <br>
 `npm create-react-app Api_user_generator` <br> <br>
@@ -19,7 +19,7 @@ Demonstar uma maneira simples de se consumir uma API utilizando **React + Axios*
 * **Axios** : Cliente **HTTP** assíncrono e baseado em *promisses*. Seu trabalho é facilitar as solicitações HTTP dos *verbos* CRUD, que serão feitas as rotas ou *endpoints*.<br> <br>
 `npm install --save axios`<br> <br>
 
-* **API** : Fonte dos dados que serão exibidos na tela. Utilizaremos uma API ou endpoint ficitícia: Elas foram criadas para testarmos nossas aplicações. Existem diversas, mas a que vamos utilizar gera perfis de usuários.<br> <br>
+* **API** : Fonte dos dados que serão exibidos na tela. Utilizaremos uma API ou endpoint ficitícia: Elas foram criadas para testarmos nossas aplicações. Existem diversas, mas a que vamos utilizar carrega uma lista de atletas.<br> <br>
 https://www.ag-grid.com/example-assets/olympic-winners.json<br> <br>
 
 
